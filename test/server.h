@@ -9,7 +9,7 @@
 
 using namespace cpr;
 
-class Server: public ::testing::Environment {
+class Server: public testing::Environment {
   public:
     virtual void SetUp();
     virtual void TearDown();
