@@ -1,7 +1,8 @@
 find_package(Threads)
 set(TEST_SERVER_LIBRARY test_server)
 add_library(${TEST_SERVER_LIBRARY}
-    server.cpp)
+    server.cpp
+    httpServer.cpp)
 target_link_libraries(${TEST_SERVER_LIBRARY}
     ${MONGOOSE_LIBRARIES}
     ${CMAKE_THREAD_LIBS_INIT})
