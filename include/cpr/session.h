@@ -36,6 +36,7 @@ class Session {
     void SetUrl(const Url& url);
     void SetParameters(const Parameters& parameters);
     void SetParameters(Parameters&& parameters);
+    void GetCurl(void* ch);
     void SetHeader(const Header& header);
     void SetTimeout(const Timeout& timeout);
     void SetConnectTimeout(const ConnectTimeout& timeout);
