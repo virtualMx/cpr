@@ -124,6 +124,13 @@ void Session::Impl::SetParameters(Parameters&& parameters) {
     parameters_ = std::move(parameters);
 }
 
+void Session::Impl::GetCurl(void* ch) {
+    auto curl = curl_->handle;
+    if (curl) {
+		ch = (void*)curl;
+	}
+}
+
 void Session::Impl::SetHeader(const Header& header) {
     auto curl = curl_->handle;
     if (curl) {
